@@ -2,13 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Secret Note - Camufla tu mensaje <3</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header>
+    <h1 id ="$h1">Bienvenido a Secret Note. Secret Note te permite codificar y decodificar tus mensajes para que solo puedan ser leídos por quien quieres. <br><br> Selecciona la accion que deseas ejecutar. </h1>
+</header>
+    <main>
+      <form action = "#">
+     <input type="button" id = "codis" class="buttons" value="Codificar un Mensaje">
+     <input type="button" id = "decodis" class="buttons" value="Decodificar un Mensaje"><br><br><br><br>
+    </form>
+  <div id="cipher" class="#divs">
+    <h1 id ="$h1"> Escribe o pega el mensaje que deseas codificar y presiona el botón para obtener tu texto secreto. Luego envía el mensaje a tu ser amadx usando el servicio de mensajería de  tu preferencia. </h1>
+<form action="#">
+<input id = "$msg" type = "text" class="msgBoxes" placeholder="Copia o escribe aquí tu mensaje en mayúsculas"><br>
+<input id = "codis" type="submit" class="buttons" value="Codifica tu mensaje" onclick="codeMe()">
+<input id = "resets" type="reset" class="buttons" value="Borrar"><br><br>
+</form>
+
+<!-- <input id= "back" type="button" class="buttons" value="Inicio" onclick="location.href='home.html'"> -->
+
+<div id="resultWindow" class="$resultWindow">
+  <p id="result" class="$documentText">   </P><br>
+</div>
+</div>
+<div id="decipher" class"#divs">
+  <h1 id ="$h1"> Pega aquí el mensaje que deseas decodificar y presiona el botón para revelar lo que dice. </h1>
+  <form action = "#">
+  <input id = "$codedMsg" type = "text" class="msgBoxes" placeholder="Copia o escribe aquí tu mensaje en mayúsculas"><br>
+  <input id = "decodis" type="submit" class="buttons" value="Revela tu mensaje!" onclick="decodeMe()">
+  <input id = "resets" type="reset" class="buttons" value="Borrar"><br><br>
+  </form>
+<!--  <input id= "back" type="button" class="buttons" value="Inicio" onclick="location.href='home.html'"> -->
+  <div id="resultWindow" class="$resultWindow">
+    <p id="result" class="$documentText"></p><br>
+  </div>
+</div>
+  </main>
+  <footer id="disclaimer"> [*-*] Secret Note is a product of Bubonikah Arts - 2020 [*-*] </footer>
+  <script src="index.js" type="module"></script>
   </body>
-</html>
+  </html>
